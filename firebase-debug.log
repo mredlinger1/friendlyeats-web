@@ -1,0 +1,42 @@
+[debug] [2023-03-22T01:43:07.306Z] ----------------------------------------------------------------------
+[debug] [2023-03-22T01:43:07.311Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mred\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only hosting
+[debug] [2023-03-22T01:43:07.312Z] CLI Version:   11.25.1
+[debug] [2023-03-22T01:43:07.313Z] Platform:      win32
+[debug] [2023-03-22T01:43:07.313Z] Node Version:  v16.13.2
+[debug] [2023-03-22T01:43:07.314Z] Time:          Tue Mar 21 2023 20:43:07 GMT-0500 (Central Daylight Time)
+[debug] [2023-03-22T01:43:07.314Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-22T01:43:07.555Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-22T01:43:07.556Z] > authorizing via signed-in user (mredlinger@wisc.edu)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-03-22T01:43:07.597Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-22T01:43:07.598Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-03-22T01:43:07.599Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-03-22T01:43:07.612Z] [hub] writing locator at C:\Users\mred\AppData\Local\Temp\hub-friendlyeats-898f8.json
+[debug] [2023-03-22T01:43:07.674Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeats-898f8/sites 
+[debug] [2023-03-22T01:43:08.326Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeats-898f8/sites 200
+[debug] [2023-03-22T01:43:08.326Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlyeats-898f8/sites {"sites":[{"name":"projects/friendlyeats-898f8/sites/friendlyeats-898f8","defaultUrl":"https://friendlyeats-898f8.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-03-22T01:43:08.327Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-898f8/webApps/-/config [none]
+[debug] [2023-03-22T01:43:08.991Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-898f8/webApps/-/config 200
+[debug] [2023-03-22T01:43:08.991Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-898f8/webApps/-/config {"projectId":"friendlyeats-898f8","storageBucket":"friendlyeats-898f8.appspot.com","apiKey":"AIzaSyC4-MXYR6QOLo8TyZGE59s1g06Y34lpdSk","authDomain":"friendlyeats-898f8.firebaseapp.com","messagingSenderId":"253202932066"}
+[debug] [2023-03-22T01:43:09.002Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-898f8 [none]
+[debug] [2023-03-22T01:43:09.399Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-898f8 200
+[debug] [2023-03-22T01:43:09.399Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlyeats-898f8 {"projectId":"friendlyeats-898f8","projectNumber":"253202932066","displayName":"FriendlyEats","name":"projects/friendlyeats-898f8","resources":{"hostingSite":"friendlyeats-898f8"},"state":"ACTIVE","etag":"1_d7869a76-5969-48b9-b9df-33cd15209da9"}
+[info] i  hosting[friendlyeats-898f8]: Serving hosting files from: ./ {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m./\u001b[22m"}}
+[info] +  hosting[friendlyeats-898f8]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
